@@ -1,0 +1,184 @@
+
+/*
+ * Day 01 - JavaScript Variables
+ * Topics: var, let, const, and Naming Conventions
+ */
+
+// ==========================================
+// 1. Variable Declaration
+// ==========================================
+
+// var - ES5
+var age = 26;
+
+console.log(age);
+
+// let - ES6
+// Variables declared with let can be reassigned.
+
+let firstName = "Arman";
+
+console.log(firstName);
+
+firstName = "Ali";
+
+console.log(firstName);
+
+// const - ES6
+// Variables declared with const cannot be reassigned.
+
+const lastName = "Ahrari";
+
+console.log(lastName);
+
+// ==========================================
+// 2. Variable Declaration Best Practices
+// ==========================================
+
+// Avoid using var in modern JavaScript.
+// Use const by default.
+// Use let when the variable needs to be reassigned.
+
+// ==========================================
+// 3. Variable Naming Rules
+// ==========================================
+
+// Valid variable names:
+
+let userName;
+let $name;
+let _name;
+
+// Variable names cannot start with a number.
+// Variable names are case-sensitive.
+// Reserved keywords cannot be used as variable names.
+
+// ==========================================
+// 4. Naming Conventions
+// ==========================================
+
+// Camel Case (Recommended in JavaScript)
+// Example: firstName, lastName, userAge
+
+let lastNameCamelCase;
+let firstNameCamelCase;
+
+// Snake Case
+// Example: first_name, last_name
+
+let last_name;
+let first_name;
+
+// Pascal Case
+// Example: FirstName, LastName
+
+let LastName;
+let FirstName;
+
+
+// ==========================================
+// 1. Number
+// ==========================================
+
+// Numbers can be integers or decimal values.
+
+const age = 22;
+const average = 19.18;
+
+console.log(age);
+console.log(average);
+
+// ==========================================
+// 2. String
+// ==========================================
+
+// Strings are used to store text.
+// They can be written using single or double quotes.
+
+const firstName = "Arman";
+const text = "Hi, I'm Arman.";
+
+console.log(firstName);
+console.log(text);
+
+// ==========================================
+// 3. Boolean
+// ==========================================
+
+// Boolean values can only be true or false.
+
+const isDone = true;
+const isGameOver = false;
+
+console.log(isDone);
+console.log(isGameOver);
+
+// ==========================================
+// 4. Array
+// ==========================================
+
+// Arrays are used to store multiple values in one variable.
+// An array can contain different data types.
+
+const names = [
+    "Arman",
+    "Ali",
+    34,
+    true
+];
+
+console.log(names);
+
+// ==========================================
+// 5. Object
+// ==========================================
+
+// Objects store data as key-value pairs.
+
+const about = {
+    fullName: "Arman",
+    age: 22,
+    lastName: "Ahrari"
+};
+
+console.log(about);
+
+// ==========================================
+// 6. Undefined
+// ==========================================
+
+// A variable declared without a value is undefined.
+
+let data;
+
+console.log(data);
+
+// ==========================================
+// 7. Null
+// ==========================================
+
+// Null represents an intentional absence of a value.
+
+let data2 = null;
+
+console.log(data2);
+
+// ==========================================
+// 8. Checking Data Types
+// ==========================================
+
+// The typeof operator returns the type of a value.
+
+console.log(typeof age);       // number
+console.log(typeof firstName); // string
+console.log(typeof isDone);    // boolean
+console.log(typeof data);      // undefined
+console.log(typeof data2);     // object
+
+// Note: typeof null returns "object".
+// This is a historical behavior in JavaScript.
+
+// ==========================================
+// End of Day 02 - JavaScript Data Types
+// ==========================================
+
