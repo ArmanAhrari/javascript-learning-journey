@@ -1,0 +1,203 @@
+
+// =========================================
+// 1. Arithmetic Operators
+// =========================================
+
+// Addition (+)
+console.log(5 + 3);
+
+const firstNumber = 5;
+const secondNumber = 3;
+
+console.log(firstNumber + secondNumber);
+
+const additionResult = firstNumber + secondNumber;
+console.log(additionResult);
+
+
+// Subtraction (-)
+console.log(5 - 3);
+
+const minuend = 5;
+const subtrahend = 3;
+
+const subtractionResult = minuend - subtrahend;
+console.log(subtractionResult);
+
+
+// Multiplication (*)
+console.log(5 * 3);
+
+const multiplicand = 5;
+const multiplier = 3;
+
+const multiplicationResult = multiplicand * multiplier;
+console.log(multiplicationResult);
+
+
+// Division (/)
+console.log(5 / 3);
+
+const dividend = 5;
+const divisor = 3;
+
+const divisionResult = dividend / divisor;
+console.log(divisionResult);
+
+
+// Exponentiation (**)
+console.log(5 ** 3);
+
+const baseNumber = 5;
+const exponent = 3;
+
+const powerResult = baseNumber ** exponent;
+console.log(powerResult);
+
+
+// Modulus (%)
+console.log(5 % 3);
+
+const dividendNumber = 5;
+const divisorNumber = 3;
+
+const remainderResult = dividendNumber % divisorNumber;
+console.log(remainderResult);
+
+
+// =========================================
+// 2. Increment & Decrement Operators
+// =========================================
+
+// Increment a variable using addition
+let counter = 3;
+
+counter = counter + 1;
+console.log(counter);
+
+
+// Increment a variable using the increment operator
+let incrementCounter = 3;
+
+incrementCounter++;
+console.log(incrementCounter);
+
+
+// Decrement a variable using the decrement operator
+let decrementCounter = 3;
+
+decrementCounter--;
+console.log(decrementCounter);
+
+
+// =========================================
+// 3. Assignment Operators
+// =========================================
+
+let score = 2;
+
+// Increase the variable by 4
+score += 4;
+
+// Other assignment operators:
+//
+// score += 4;   // Addition assignment
+// score -= 4;   // Subtraction assignment
+// score *= 4;   // Multiplication assignment
+// score /= 4;   // Division assignment
+// score %= 4;   // Remainder assignment
+// score **= 4;  // Exponentiation assignment
+
+console.log(score);
+
+
+// =========================================
+// 4. Comparison Operators
+// =========================================
+
+const numberA = 5;
+const numberB = 2;
+const numberString = "5";
+const anotherNumber = 5;
+
+// Loose equality
+console.log(numberA == numberString);
+console.log(numberA == numberB);
+console.log(numberA == anotherNumber);
+
+// Loose inequality
+console.log(numberA != numberString);
+console.log(numberA != numberB);
+
+// Strict equality
+console.log(numberA === numberString);
+
+// Strict inequality
+console.log(numberA !== anotherNumber);
+
+// Greater than and less than
+console.log(numberA > anotherNumber);
+console.log(numberA >= anotherNumber);
+console.log(numberA < numberB);
+console.log(numberA <= anotherNumber);
+
+
+// =========================================
+// 5. Logical Operators
+// =========================================
+
+const age = 4;
+const minimumAge = 3;
+const maximumAge = 4;
+
+// AND operator
+console.log(age > minimumAge && age >= maximumAge);
+
+// OR operator
+console.log(age > minimumAge || age > maximumAge);
+
+// NOT operator
+console.log(!true);
+
+// Negate a comparison result
+console.log(!(age > minimumAge));
+
+
+// =========================================
+// 6. Unary Operators
+// =========================================
+
+// Unary Plus: Convert a numeric string into a number
+const numericString = "5";
+
+const convertedNumber = +numericString;
+console.log(convertedNumber);
+console.log(typeof convertedNumber);
+
+
+// Unary Minus: Reverse the sign of a number
+const originalNumber = -5;
+
+const negativeResult = -originalNumber;
+console.log(negativeResult);
+
+
+// =========================================
+// 7. Nullish Coalescing Operator (??)
+// =========================================
+
+// Return the default value when the first value is null or undefined
+let userName;
+
+const defaultName = "Guest";
+
+console.log(userName ?? defaultName);
+
+
+// Return the existing value when it is not null or undefined
+let registeredName = "Arman";
+
+const fallbackName = "Guest";
+
+console.log(registeredName ?? fallbackName);
+
