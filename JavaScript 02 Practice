@@ -1,0 +1,43 @@
+// Define product prices
+const productPriceA = 10;
+const productPriceB = 15;
+const productPriceC = 18;
+
+// Define the user's available balance
+const availableBalance = 60;
+
+// Calculate the total price
+// Two units of product C are included
+const totalPrice = productPriceA + productPriceB + (productPriceC * 2);
+
+console.log("Total price:", totalPrice);
+
+
+// Calculate the average price per unit
+const averagePrice = totalPrice / 4;
+
+console.log("Average price:", averagePrice);
+
+
+// Calculate the discount
+const discountRate = 0.05;
+const discountAmount = totalPrice * discountRate;
+
+// Calculate the final price after discount
+const finalPrice = totalPrice - discountAmount;
+
+console.log("Final price:", finalPrice);
+
+
+// Check whether the user can afford the purchase
+const canAffordPurchase = finalPrice <= availableBalance;
+
+console.log("Can afford purchase:", canAffordPurchase);
+
+
+// Display a message using the ternary operator
+const purchaseMessage = canAffordPurchase
+    ? "OK! You can buy these products."
+    : "Sorry! You don't have enough balance.";
+
+console.log(purchaseMessage);
