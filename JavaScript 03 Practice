@@ -1,0 +1,40 @@
+
+const greetingMessage = "hi my name is Arman";
+
+const firstCharacter = greetingMessage.charAt(0);
+const uppercaseCharacter = firstCharacter.toUpperCase();
+const formattedGreeting = greetingMessage.replace(firstCharacter, uppercaseCharacter);
+
+console.log(formattedGreeting);
+
+
+const secondMessage = "hi my name is Arman";
+
+const targetCharacter = secondMessage.charAt(15);
+const lowercaseCharacter = targetCharacter.toLowerCase();
+const updatedMessage = secondMessage.replace(targetCharacter, lowercaseCharacter);
+
+console.log(updatedMessage);
+
+
+const phoneNumber = "09173998839";
+
+const hiddenDigits = phoneNumber.slice(3, 7);
+const maskedDigits = "****";
+const maskedPhoneNumber = phoneNumber.replace(hiddenDigits, maskedDigits);
+
+console.log(maskedPhoneNumber);
+
+
+const fullName = "arman ahrari";
+
+const spaceIndex = fullName.indexOf(" ");
+const firstName = fullName.slice(0, spaceIndex);
+const lastName = fullName.slice(spaceIndex + 1);
+
+const introduction = `My name is ${firstName} and my last name is ${lastName}.`;
+
+console.log(spaceIndex);
+console.log(firstName);
+console.log(lastName);
+console.log(introduction);
