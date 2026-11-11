@@ -1,0 +1,172 @@
+
+// ==========================================
+// 1. Number Data Type
+// ==========================================
+
+// Declare a number variable
+const userAge = 23;
+
+console.log(userAge);
+
+// Display the data type of the variable
+console.log(typeof userAge);
+
+
+// ==========================================
+// 2. Number to String Conversion
+// ==========================================
+
+// Convert a number into a string
+const ageAsString = userAge.toString();
+
+console.log(ageAsString);
+console.log(typeof ageAsString);
+
+
+// ==========================================
+// 3. Number Formatting
+// ==========================================
+
+// Format a decimal number with 3 decimal places
+const productPrice = 50.445433;
+
+console.log(productPrice.toFixed(3));
+
+
+// ==========================================
+// 4. String to Number Conversion
+// ==========================================
+
+// Convert a string into different number formats
+const scoreText = "80";
+
+const scoreNumber = Number(scoreText);
+const scoreFloat = parseFloat(scoreText);
+const scoreInteger = parseInt(scoreText);
+
+console.log(scoreNumber);
+console.log(scoreFloat);
+console.log(scoreInteger);
+
+
+// ==========================================
+// 5. String Declaration
+// ==========================================
+
+// Declare strings using different quotation styles
+const singleQuoteText = "I'm learning JavaScript";
+
+const escapedText = 'I\'m learning JavaScript';
+
+// Use the escape character to create a new line
+const multilineText = "Hello, I'm Arman.\nI'm learning JavaScript.";
+
+// Use template literals for multiline strings
+const templateText = `Hello, I'm Arman.
+I'm learning JavaScript.`;
+
+console.log(singleQuoteText);
+console.log(escapedText);
+console.log(multilineText);
+console.log(templateText);
+
+
+// ==========================================
+// 6. String Length
+// ==========================================
+
+// Get the total number of characters in a string
+const greetingMessage = "Hello, I'm Arman";
+
+console.log(greetingMessage.length);
+
+
+// ==========================================
+// 7. Accessing String Characters
+// ==========================================
+
+// Access a character using its index
+console.log(greetingMessage[5]);
+
+// Access a character using charAt()
+console.log(greetingMessage.charAt(4));
+
+
+// ==========================================
+// 8. Finding Characters and Text
+// ==========================================
+
+// Find the first occurrence of a character
+console.log(greetingMessage.indexOf("m"));
+
+// Check whether a string contains specific text
+console.log(greetingMessage.includes("Arman"));
+
+
+// ==========================================
+// 9. Changing Letter Case
+// ==========================================
+
+// Convert all characters to uppercase
+console.log(greetingMessage.toUpperCase());
+
+// Convert all characters to lowercase
+console.log(greetingMessage.toLowerCase());
+
+
+// ==========================================
+// 10. Splitting Strings
+// ==========================================
+
+// Split a string into an array using spaces
+const fullName = "Arman Ahrari";
+
+console.log(fullName.split(" "));
+
+
+// ==========================================
+// 11. Replacing String Content
+// ==========================================
+
+// Replace a specific word with another word
+const originalMessage = "Hello, I'm Arman";
+
+const updatedMessage = originalMessage.replace("Arman", "Alex");
+
+console.log(updatedMessage);
+
+
+// ==========================================
+// 12. Concatenating Strings
+// ==========================================
+
+// Combine multiple strings using concat()
+const firstName = "Arman";
+const lastName = "Ahrari";
+
+const completeName = firstName.concat(" ", lastName);
+
+console.log(completeName);
+
+
+// ==========================================
+// 13. Extracting Parts of a String
+// ==========================================
+
+// Extract a portion of a string using slice()
+const courseTitle = "JavaScript Programming";
+
+console.log(courseTitle.slice(0, 10));
+
+
+// ==========================================
+// 14. Template Literals
+// ==========================================
+
+// Insert variables directly into a string
+const developerName = "Arman";
+const developerAge = 23;
+
+const introduction = `Hi, I'm ${developerName} and I'm ${developerAge} years old.`;
+
+console.log(introduction);
