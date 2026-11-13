@@ -1,0 +1,187 @@
+
+// ================================
+// 1. Array Creation
+// ================================
+
+const firstArray = [1, 2, 3, 4];
+const secondArray = new Array(5, 6, 7, 8);
+
+const mixedArray = [
+    1,
+    "arman",
+    [1, 2, 3, 4],
+    { age: 23 },
+    false
+];
+
+const array = ["arman", "ahrari", 23, 1, 2, 3, 4, 7.8, 5];
+
+
+// ================================
+// 2. Adding and Removing Elements
+// ================================
+
+// Add an element to the end of the array
+array.push(10);
+
+// Add an element to the beginning of the array
+array.unshift(0);
+
+// Remove the last element
+array.pop();
+
+// Remove the first element
+array.shift();
+
+
+// ================================
+// 3. Array Conversion
+// ================================
+
+// Convert an array into a string
+const arrayToString = array.toString();
+
+// Join array elements with a custom separator
+const joinedArray = array.join(" and ");
+
+
+// ================================
+// 4. Updating and Deleting Elements
+// ================================
+
+// Update an element using its index
+array[2] = 23;
+
+// Delete an element without changing the array length
+delete array[0];
+
+
+// ================================
+// 5. Combining and Flattening Arrays
+// ================================
+
+const numbers = [1, 2, 3];
+const names = ["arman", "ali", "mohammad"];
+
+// Combine arrays using concat()
+const combinedArray = numbers.concat(names);
+
+// Combine arrays using the Spread Operator
+const spreadArray = [...numbers, ...names];
+
+// Flatten a nested array into a single array
+const nestedArray = [[1, 2, 3], [4, 5, 6]];
+const flattenedArray = nestedArray.flat();
+
+
+// ================================
+// 6. Searching Array Elements
+// ================================
+
+// Find the index of an element
+const elementIndex = array.indexOf(23);
+
+// Check if an element exists in the array
+const hasZero = array.includes(0);
+
+
+// ================================
+// 7. Slice and Splice
+// ================================
+
+// Extract elements without changing the original array
+const slicedArray = array.slice(0, 2);
+
+// Remove elements starting from index 3
+const splicedArray = [...array];
+splicedArray.splice(3, 2);
+
+// Insert an element at index 1 without removing anything
+const insertedArray = [...array];
+insertedArray.splice(1, 0, "ali");
+
+
+// ================================
+// 8. Sorting and Reversing
+// ================================
+
+const fruits = ["orange", "apple", "banana"];
+
+// Sort elements alphabetically
+fruits.sort();
+
+// Reverse the array elements
+fruits.reverse();
+
+const numericArray = [10, 2, 30, 4];
+
+// Sort numbers in ascending order
+numericArray.sort((a, b) => a - b);
+
+
+// ================================
+// 9. Array Destructuring
+// ================================
+
+const introduction = ["arman", "ahrari", 23, 1, 2, 3, 4];
+
+const [firstName, lastName, age, ...otherValues] = introduction;
+
+
+// ================================
+// 10. Creating and Filling an Empty Array
+// ================================
+
+const favoriteFriends = [];
+
+// Add elements to the empty array
+favoriteFriends.push("ali");
+favoriteFriends.push("hasan");
+favoriteFriends.push("arman");
+favoriteFriends.push("mohammad");
+favoriteFriends.push("kos");
+
+// Convert the array into a string
+const favoriteFriendsText = favoriteFriends.join(" and ");
+
+const favoriteMessage = `My favorite friends are ${favoriteFriendsText}`;
+
+
+// ================================
+// 11. Removing the Last Array Element
+// ================================
+
+// Get the index of the last element
+const lastIndex = favoriteFriends.length - 1;
+
+// Remove the last element
+favoriteFriends.splice(lastIndex, 1);
+
+
+// ================================
+// 12. Extracting and Replacing Elements
+// ================================
+
+// Extract the first two elements
+const firstTwoFriends = favoriteFriends.slice(0, 2);
+
+// Remove the first two elements and insert them as a nested array
+favoriteFriends.splice(0, 2, firstTwoFriends);
+
+
+// ================================
+// 13. Nested Arrays
+// ================================
+
+const fullStack = [
+    ["html", "css", "js", "react"],
+    ["node", "express", "mongodb"]
+];
+
+// Extract frontend and backend technologies
+const [frontend, backend] = fullStack;
+
+// Extract specific frontend technologies
+const [, css, , react] = frontend;
+
+
