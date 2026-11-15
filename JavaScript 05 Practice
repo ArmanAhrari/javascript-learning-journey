@@ -1,0 +1,52 @@
+
+// Array of Objects
+
+const userData = [
+    {
+        identity: {
+            name: "arman",
+            lastName: "ahrari",
+            city: "shiraz",
+            age: 23
+        }
+    },
+    {
+        skills: ["js", "html", "css"]
+    }
+];
+
+
+// Array Destructuring
+
+const [identityData, skillsData] = userData;
+
+
+// Nested Object Destructuring
+
+const {
+    identity: {
+        name,
+        lastName,
+        city,
+        age
+    }
+} = identityData;
+
+
+// Array Destructuring Inside an Object
+
+const {
+    skills: [javascript, html, css]
+} = skillsData;
+
+
+// Display Results
+
+console.log(name);
+console.log(lastName);
+console.log(city);
+console.log(age);
+
+console.log(javascript);
+console.log(html);
+console.log(css);
