@@ -1,0 +1,183 @@
+
+// Object Creation and Accessing Properties
+
+const user = {
+    name: "Arman",
+    lastName: "Ahrari",
+    skills: ["HTML", "CSS", "WordPress"],
+    age: 23,
+    5: "yes"
+};
+
+const propertyKey = "lastName";
+
+console.log(user.name);
+console.log(user["name"]);
+console.log(user[propertyKey]);
+
+console.log(user[5]);
+console.log(user["5"]);
+
+
+// Using Variables as Object Keys
+
+const dynamicKey = "sport";
+
+const userProfile = {
+    name: "Arman",
+    lastName: "Ahrari",
+    skills: ["HTML", "CSS", "WordPress"],
+    age: 23,
+    51: "yes",
+    dynamicKey: dynamicKey,
+    [dynamicKey]: "My favorite sports"
+};
+
+console.log(userProfile);
+
+
+// Adding, Updating, and Deleting Properties
+
+userProfile.name = "Ali";
+userProfile["name"] = "Nima";
+
+delete userProfile.name;
+
+userProfile.name = null;
+
+console.log(userProfile);
+
+
+// Nested Objects
+
+const userAddress = {
+    name: "Arman",
+    lastName: "Ahrari",
+    skills: ["HTML", "CSS", "WordPress"],
+    address: {
+        country: "Iran",
+        province: {
+            name: "Fars",
+            city: "Shiraz"
+        }
+    }
+};
+
+console.log(userAddress.address.country);
+console.log(userAddress.address.province.name);
+console.log(userAddress.address.province.city);
+
+
+// Checking if a Property Exists
+
+console.log("name" in userAddress);
+console.log("age" in userAddress);
+
+
+// Object.keys(), Object.values(), and Object.entries()
+
+const userData = {
+    name: "Arman",
+    lastName: "Ahrari",
+    skills: ["HTML", "CSS", "WordPress"],
+    age: 23,
+    5: "yes"
+};
+
+const objectKeys = Object.keys(userData);
+const objectValues = Object.values(userData);
+const objectEntries = Object.entries(userData);
+
+console.log(objectKeys);
+console.log(objectValues);
+console.log(objectEntries);
+
+
+// Copying an Object Using Spread Operator
+
+const originalObject = {
+    name: "Arman",
+    lastName: "Ahrari",
+    skills: ["HTML", "CSS", "WordPress"],
+    age: 23
+};
+
+const copiedObject = { ...originalObject };
+
+originalObject.name = "Saman";
+
+console.log(originalObject);
+console.log(copiedObject);
+
+
+// Merging Objects Using Spread Operator
+
+const personalInfo = {
+    name: "Arman",
+    lastName: "Ahrari",
+    age: 23
+};
+
+const additionalInfo = {
+    a: 1,
+    b: 2,
+    c: 3
+};
+
+const mergedObject = {
+    ...personalInfo,
+    ...additionalInfo
+};
+
+const updatedMergedObject = {
+    ...personalInfo,
+    ...additionalInfo,
+    c: 10,
+    f: 5
+};
+
+console.log(mergedObject);
+console.log(updatedMergedObject);
+
+
+// Object Destructuring
+
+const favorite = "sex";
+
+const userDetails = {
+    name: "Arman",
+    love: "super",
+    lastName: "Ahrari",
+    skills: ["HTML", "CSS", "WordPress"],
+    age: 23,
+    address: {
+        country: "Iran",
+        province: {
+            name: "Fars",
+            city: "Shiraz"
+        }
+    }
+};
+
+const {
+    love: favoriteLove,
+    name,
+    age,
+    address: {
+        country,
+        province: {
+            name: provinceName,
+            city
+        }
+    },
+    ...otherProperties
+} = userDetails;
+
+console.log(favorite);
+console.log(favoriteLove);
+console.log(name);
+console.log(age);
+console.log(country);
+console.log(provinceName);
+console.log(city);
+console.log(otherProperties);
